@@ -256,6 +256,10 @@ hr.break-row {
     padding-top: 3%;
     margin: 0 3% 3% 3%;
   }
+  
+  .footer{
+    margin: 0 3%;
+  }
 
   .services {
     margin: 35px 3% 3% 3%;
