@@ -209,6 +209,10 @@ hr.break-row {
   align-items: center;
 }
 
+.footer ul li{
+  list-style: none;
+}
+
 .footer ul li a {
   text-decoration: none;
   display: inline-block;
