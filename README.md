@@ -6,7 +6,7 @@
 
 # Important
 
-take a look --> https://glasses-outdoor.vercel.app/index.html
+:key: take a look --> https://glasses-outdoor.vercel.app/index.html
 
 # Sections
 
@@ -14,7 +14,7 @@ take a look --> https://glasses-outdoor.vercel.app/index.html
 - [technologies](#-technologies)
 - [Contributing](#-Contributing)
 
-## About
+## :mag: About
 
 I've created this website to see how CSS Grid works in practice, this website 100% responsive, which means it works on different types of screens, I also used some SEO techniques to help people to find our website easily, this is about glasses, where people can find and choose beautiful glasses so they can see the world better
 
@@ -28,7 +28,7 @@ All the services were TDD planed, so please make sure to update tests as appropr
 
 ---
 
-## technologies
+## 🛠 technologies
 
 the project was developed using the following technologies
 
