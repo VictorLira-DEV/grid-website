@@ -1,7 +1,7 @@
 # Grid website
 
 <h1 align="center" >
-    <img src="https://ik.imagekit.io/mcvhbcq4zu/Animated_GIF-downsized_large__1__dOfHTfVgF.gif">
+    <img src="https://ik.imagekit.io/mcvhbcq4zu/glasses_wtX6b9Zr_.gif">
 </h1>
 
 # Important
@@ -40,7 +40,7 @@ the project was developed using the following technologies
 ## Mobile Version
 
 <h1 align="center" >
-    <img src="https://ik.imagekit.io/mcvhbcq4zu/Animated_GIF-downsized_large__2__hxT5_Co_O.gif">
+    <img src="https://ik.imagekit.io/mcvhbcq4zu/glasses-mobile_kw3xVTGfP.gif">
 </h1>
 
 Created by **Victor lira dev**
