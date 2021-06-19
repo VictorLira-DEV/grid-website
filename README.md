@@ -6,7 +6,7 @@
 
 # Important
 
-:key: take a look --> https://glasses-outdoor.vercel.app/index.html
+:key: take a look --> https://victorlira-dev.github.io/Glasses-Outdoor/
 
 # Sections
 
