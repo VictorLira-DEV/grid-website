@@ -1,10 +1,10 @@
-# Grid website
+# 💻 Grid website
 
 <h1 align="center" >
     <img src="https://ik.imagekit.io/mcvhbcq4zu/glasses_wtX6b9Zr_.gif">
 </h1>
 
-# Important
+# 👀 Important
 
 :key: take a look --> https://glasses-outdoor.vercel.app/
 
@@ -20,7 +20,7 @@ I've created this website to see how CSS Grid works in practice, this website 10
 
 ---
 
-## Contributing
+## 🧰 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -28,14 +28,12 @@ All the services were TDD planed, so please make sure to update tests as appropr
 
 ---
 
-## 🛠 technologies
-
-the project was developed using the following technologies
-
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
-- [JAVASCRIPT](https://www.javascript.com/)
+## :rocket: Technologies used:
+<p align="center">
+<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg" alt="html5"  width="70" height="70"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" alt="css3" width="70" height="70"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="javascript" width="70" height="70"/>
+</p>
 
 ## Mobile Version
 
