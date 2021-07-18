@@ -41,6 +41,42 @@
   max-width: 20px;
 }
 
+@media screen and (max-width: 866px) {
+  .footer {
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .footer {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer p {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  .footer {
+    padding: 10px 10px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -275,15 +311,6 @@ hr.break-row {
   }
 }
 
-@media screen and (max-width: 700px) {
-  .main-nav ul {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
-  }
-}
-
 @media screen and (max-width: 600px) {
   .pop-up {
     width: 80%;
@@ -291,6 +318,12 @@ hr.break-row {
   .main-nav {
     padding-top: 3%;
     margin: 0 3% 3% 3%;
+  }
+  .main-nav ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   .footer {
     margin: 0 3%;
@@ -316,39 +349,9 @@ hr.break-row {
   }
 }
 
-@media screen and (max-width: 866px) {
+@media screen and (max-width: 328px) {
   .footer {
-    padding: 20px 30px;
-  }
-}
-
-@media screen and (max-width: 730px) {
-  .footer {
-    padding: 10px 30px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .main-nav ul {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
-  }
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .footer p {
-    margin-bottom: 10px;
+    padding: 10px 10px;
   }
 }
 /*# sourceMappingURL=services.css.map */

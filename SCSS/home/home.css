@@ -26,6 +26,15 @@
   color: #fff;
 }
 
+@media screen and (max-width: 700px) {
+  .wrapper .main-nav ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .footer {
   background: #333;
   color: #fff;
@@ -67,6 +76,42 @@
   -webkit-filter: invert(1);
           filter: invert(1);
   max-width: 20px;
+}
+
+@media screen and (max-width: 866px) {
+  .footer {
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .footer {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer p {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  .footer {
+    padding: 10px 10px;
+  }
 }
 
 * {
@@ -232,30 +277,10 @@ body {
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
-/*media Queries*/
-/*media Queries*/
-@media screen and (max-width: 866px) {
-  .footer {
-    padding: 20px 30px;
-  }
-}
-
-@media screen and (max-width: 730px) {
-  .footer {
-    padding: 10px 30px;
-  }
-}
-
 @media screen and (max-width: 700px) {
   body {
     padding: 10px 10px;
     margin: 0;
-  }
-  .main-nav ul {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
   }
   .top-container {
         grid-template-areas: "showcase showcase" "top-box-a top-box-b";
@@ -273,21 +298,6 @@ body {
     margin: auto;
     margin-top: 10px;
   }
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .footer p {
-    margin-bottom: 10px;
-  }
 }
 
 @media (max-width: 500px) {
@@ -299,6 +309,12 @@ body {
 @media screen and (max-width: 405px) {
   .wrapper .top-container .showcase {
     padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 333px) {
+  .wrapper .top-container .showcase {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=home.css.map */

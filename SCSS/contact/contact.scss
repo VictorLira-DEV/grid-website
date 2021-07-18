@@ -137,35 +137,6 @@ body {
     }
 }
 
-@media screen and (max-width: 866px) {
-    .footer {
-        padding: 20px 30px;
-    }
-}
-
-@media screen and (max-width: 730px) {
-    .footer {
-        padding: 10px 30px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .main-nav ul {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .footer p {
-        margin-bottom: 10px;
-    }
-}
-
 @media screen and (max-width: 584px) {
     .contact-container {
         .form-container {
