@@ -1,25 +1,8 @@
 /*CSS Variables*/
-
 @import "../reusable/menuu";
 @import "../reusable/footer";
 @import "../reusable/variables";
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-$primary: #ddd;
-$dark: #333;
-$light: #fff;
-$shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-
-html {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: $dark;
-    width: 100%;
-}
+@import '../reusable/_scss-reset';
 
 body {
     background: #ccc;

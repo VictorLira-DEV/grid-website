@@ -77,22 +77,55 @@
   }
 }
 
+.main-nav ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  list-style: none;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-nav a {
+  background: #ddd;
+  display: block;
+  padding: 0.8rem;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.main-nav a:hover {
+  background: #333;
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper .main-nav ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
-}
-
-:root {
-  --primary: #ddd;
-  --dark: #333;
-  --light: #fff;
-  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  color: #333;
 }
 
 body {
@@ -162,27 +195,27 @@ body {
 }
 
 .main-nav ul li a {
-  color: var(--dark);
-  background: var(--primary);
+  color: #333;
+  background: #ddd;
   display: block;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.8rem;
   font-size: 1.1rem;
-  -webkit-box-shadow: var(--shadow);
-          box-shadow: var(--shadow);
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
 .main-nav ul li a:hover {
-  background-color: var(--dark);
+  background-color: #333;
   color: white;
 }
 
 hr.break-row {
   margin: 50px;
   border: none;
-  background-color: var(--dark);
+  background-color: #333;
   height: 1px;
 }
 
@@ -268,7 +301,7 @@ hr.break-row {
 .texts p {
   text-align: justify;
   line-height: 1.7rem;
-  color: var(--dark);
+  color: #333;
 }
 
 .texts.text1 {
@@ -303,10 +336,10 @@ hr.break-row {
   .services {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[8];
-        grid-template-rows: repeat(8, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "picture1 picture1" "text1 text1" "picture2 picture2" "text2 text2" "picture3 picture3" "text3 text3" "picture4 picture4" "text4 text4";
   }
 }
