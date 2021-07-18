@@ -1,0 +1,304 @@
+/*CSS Variables*/
+.main-nav ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  list-style: none;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-nav a {
+  background: #ddd;
+  display: block;
+  padding: 0.8rem;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.main-nav a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer ul li a img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  max-width: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  width: 100%;
+}
+
+body {
+  background: #ccc;
+  margin: 30px 50px 0 50px;
+  line-height: 1.4;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.top-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+      grid-template-areas: "showcase showcase top-box-a" "showcase showcase top-box-b";
+}
+
+.top-container .showcase {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: showcase;
+  min-height: 400px;
+  background: url("../../images/pic2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.top-container .showcase h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.top-container .showcase p {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.top-container img {
+  max-width: 100%;
+}
+
+.top-container .top-box {
+  background: #ddd;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  padding: 1.5rem;
+}
+
+.top-container .top-box.top-box-a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: top-box-a;
+}
+
+.top-container .top-box.top-box-b {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: top-box-b;
+}
+
+.top-container .top-box .price {
+  font-size: 2.5rem;
+}
+
+.boxes {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.boxes .box {
+  background: #ddd;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  text-align: center;
+}
+
+.info {
+  background: #ddd;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+}
+
+.info img {
+  max-width: 100%;
+}
+
+.info #learn {
+  margin-top: 20px;
+}
+
+/*Portifolio*/
+.portifolio {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portifolio img {
+  width: 100%;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/*media Queries*/
+/*media Queries*/
+@media screen and (max-width: 866px) {
+  .footer {
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .footer {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 10px 10px;
+    margin: 0;
+  }
+  .main-nav ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+  .top-container {
+        grid-template-areas: "showcase showcase" "top-box-a top-box-b";
+  }
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+  .info {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-container {
+        grid-template-areas: "showcase" "top-box-a" "top-box-b";
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .wrapper .top-container .showcase {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=home.css.map */

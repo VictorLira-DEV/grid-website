@@ -1,0 +1,27 @@
+@import './variables';
+
+.main-nav {
+    ul {
+        display: grid;
+        grid-gap: 20px;
+        list-style: none;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    a {
+        background: $primary;
+        display: block;
+        padding: 0.8rem;
+        text-align: center;
+        color: $dark;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.1rem;
+        box-shadow: $shadow;
+
+        &:hover {
+            background: $dark;
+            color: $light;
+        }
+    }
+}
