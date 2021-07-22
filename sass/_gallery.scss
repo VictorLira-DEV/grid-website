@@ -1,7 +1,7 @@
 @import "../reusable/footer";
-@import '../reusable/menuu';
+@import "../reusable/menuu";
 @import "../reusable/variables";
-@import '../reusable/_scss-reset';
+@import "../reusable/_scss-reset";
 
 body {
     background: #ccc;
@@ -47,30 +47,12 @@ body {
 //corpo full
 
 .corpo-full {
-    .mensagem {
-        padding: 50px 0px 0px 0px;
-        text-align: justify;
-
-        h1 {
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: 500;
-            background-color: $dark;
-            color: #ccc;
-        }
-
-        p {
-            margin-top: 20px;
-            text-align: center;
-        }
-    }
-
     ul#album-fotos {
         margin: 0 auto;
         display: grid;
         justify-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 20px 10px 20px 10px;
+        padding: 50px 10px 50px 10px;
         list-style: none;
 
         li {
@@ -213,4 +195,3 @@ body {
         margin: 0;
     }
 }
-

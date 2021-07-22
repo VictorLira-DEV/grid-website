@@ -1,8 +1,8 @@
 /*CSS Variables*/
-@import "../reusable/menuu";
-@import "../reusable/footer";
-@import "../reusable/variables";
-@import '../reusable/_scss-reset';
+@import "./reusable/menu";
+@import "./reusable/footer";
+@import "./reusable/variables";
+@import "./reusable/reset";
 
 body {
     background: #ccc;

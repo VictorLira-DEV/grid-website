@@ -1,7 +1,7 @@
 @import "../reusable/footer";
 @import "../reusable/variables";
-@import '../reusable/menuu';
-@import '../reusable/_scss-reset';
+@import "../reusable/menuu";
+@import "../reusable/_scss-reset";
 
 body {
     background: #ccc;
@@ -194,7 +194,7 @@ hr.break-row {
 @media screen and (max-width: 638px) {
     .services {
         display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "picture1 picture1"
