@@ -1,7 +1,7 @@
 # 💻 Grid website
 
 <h2 align="center"> 
-        My Personal Project ✔️
+       😎 My Personal Project ✔️
 </h2>
 <br>
 <h1 align="center" >
