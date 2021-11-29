@@ -1,199 +1,236 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /*CSS Variables*/
 @import "./sass/menu";
 @import "./sass/footer";
 @import "./sass/variables";
 @import "./sass/reset";
 
-
 body {
-    background: #ccc;
-    margin: 30px 50px 0 50px;
-    line-height: 1.4;
-    display: block;
-    &#show-content{
-        display: block !important;
-    }
+	background: #ccc;
+	margin: 30px 50px 0 50px;
+	line-height: 1.4;
+	display: block;
+	&#show-content {
+		display: block !important;
+	}
 }
 
-
-
-
 .btn {
-    background-color: $dark;
-    color: $light;
-    padding: 0.6rem 1.3rem;
-    text-decoration: none;
-    border: 0;
+	background-color: $dark;
+	color: $light;
+	padding: 0.6rem 1.3rem;
+	text-decoration: none;
+	border: 0;
 }
 
 .wrapper {
-    display: grid;
-    grid-gap: 20px;
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 20px;
 }
 
 //navigation
 
 //top-container
 .top-container {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
-        "showcase showcase top-box-a"
-        "showcase showcase top-box-b";
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+		"showcase showcase top-box-a"
+		"showcase showcase top-box-b";
 
-    .showcase {
-        grid-area: showcase;
-        min-height: 400px;
-        background: url("./images/pic2.jpg");
-        background-size: cover;
-        background-position: center;
-        padding: 3rem;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        box-shadow: $shadow;
+	.showcase {
+		-ms-grid-row-span: 3;
+		-ms-grid-column-span: 3;
+		grid-area: showcase;
+		min-height: 400px;
+		background: url("./images/pic2.jpg");
+		background-size: cover;
+		background-position: center;
+		padding: 3rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: start;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-shadow: $shadow;
+		box-shadow: $shadow;
 
-        h1 {
-            font-size: 4rem;
-            color: $light;
-        }
+		h1 {
+			font-size: 4rem;
+			color: $light;
+		}
 
-        p {
-            font-size: 1.3rem;
-            color: $light;
-        }
-    }
+		p {
+			font-size: 1.3rem;
+			color: $light;
+		}
+	}
 
-    img {
-        max-width: 100%;
-    }
+	.top-container > .showcase {
+		-ms-grid-row-span: 1;
+		-ms-grid-column-span: 2;
+	}
 
-    .top-box {
-        background: $primary;
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        box-shadow: $shadow;
-        padding: 1.5rem;
+	img {
+		max-width: 100%;
+	}
 
-        &.top-box-a {
-            grid-area: top-box-a;
-        }
+	.top-box {
+		background: $primary;
+		display: -ms-grid;
+		display: grid;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		justify-items: center;
+		-webkit-box-shadow: $shadow;
+		box-shadow: $shadow;
+		padding: 1.5rem;
 
-        &.top-box-b {
-            grid-area: top-box-b;
-        }
+		&.top-box-a {
+			grid-area: top-box-a;
+		}
 
-        .price {
-            font-size: 2.5rem;
-        }
-    }
+		&.top-box-b {
+			grid-area: top-box-b;
+		}
+		.price {
+			font-size: 2.5rem;
+		}
+	}
 }
 
 //boxes
 
 .boxes {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
-    .box {
-        background: $primary;
-        text-align: center;
-        padding: 1.5rem 2rem;
-        box-shadow: $shadow;
-        text-align: center;
-    }
+	.box {
+		background: $primary;
+		text-align: center;
+		padding: 1.5rem 2rem;
+		-webkit-box-shadow: $shadow;
+		box-shadow: $shadow;
+		text-align: center;
+	}
 }
 
 //information
 
 .info {
-    background: $primary;
-    box-shadow: $shadow;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr;
-    padding: 3rem;
+	background: $primary;
+	-webkit-box-shadow: $shadow;
+	box-shadow: $shadow;
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 30px;
+	-ms-grid-columns: 1fr 30px 1fr;
+	grid-template-columns: 1fr 1fr;
+	padding: 3rem;
 
-    img {
-        max-width: 100%;
-    }
+	img {
+		max-width: 100%;
+	}
 
-    #learn {
-        margin-top: 20px;
-    }
+	#learn {
+		margin-top: 20px;
+	}
 }
 
 /*Portifolio*/
 
 .portifolio {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
-    img {
-        width: 100%;
-        box-shadow: $shadow;
-    }
+	img {
+		width: 100%;
+		-webkit-box-shadow: $shadow;
+		box-shadow: $shadow;
+	}
 }
 
 //media queries
 
 @media screen and (max-width: 700px) {
-    body {
-        padding: 10px 10px;
-        margin: 0;
-    }
+	body {
+		padding: 10px 10px;
+		margin: 0;
+	}
 
-    .top-container {
-        grid-template-areas:
-            "showcase showcase"
-            "top-box-a top-box-b";
-    }
+	.top-container {
+		grid-template-areas:
+			"showcase showcase"
+			"top-box-a top-box-b";
+	}
 
-    .showcase h1 {
-        font-size: 2.5rem;
-    }
+	.showcase h1 {
+		font-size: 2.5rem;
+	}
 
-    .info {
-        grid-template-columns: 1fr;
-    }
+	.info {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
 
-    .info .btn {
-        display: block;
-        text-align: center;
-        margin: auto;
-        margin-top: 10px;
-    }
+	.info .btn {
+		display: block;
+		text-align: center;
+		margin: auto;
+		margin-top: 10px;
+	}
 }
 
 @media (max-width: 500px) {
-    .top-container {
-        grid-template-areas:
-            "showcase"
-            "top-box-a"
-            "top-box-b";
-    }
+	.top-container {
+		grid-template-areas:
+			"showcase"
+			"top-box-a"
+			"top-box-b";
+	}
+	.top-container > .showcase {
+		-ms-grid-row-span: 1;
+		-ms-grid-column-span: 1;
+	}
 }
 
 @media screen and (max-width: 405px) {
-    .wrapper {
-        .top-container {
-            .showcase {
-                padding: 1rem;
-            }
-        }
-    }
+	.wrapper {
+		.top-container {
+			.showcase {
+				padding: 1rem;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 333px) {
-    .wrapper {
-        .top-container {
-            .showcase {
-                padding: 0;
-            }
-        }
-    }
+	.wrapper {
+		.top-container {
+			.showcase {
+				padding: 0;
+			}
+		}
+	}
 }

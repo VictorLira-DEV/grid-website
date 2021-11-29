@@ -1,10 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import './variables';
 
 .main-nav {
     ul {
+        display: -ms-grid;
         display: grid;
         grid-gap: 20px;
         list-style: none;
+        -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
@@ -17,7 +26,8 @@
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1.1rem;
-        box-shadow: $shadow;
+        -webkit-box-shadow: $shadow;
+                box-shadow: $shadow;
 
         &:hover {
             background: $dark;
@@ -30,7 +40,9 @@
 
     .wrapper {
         .main-nav ul {
+            -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
+            -ms-grid-rows: 1fr 20px 1fr 20px 1fr 20px 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
         }
     }

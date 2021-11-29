@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import "../../sass/footer";
 @import "../../sass/menu";
 @import "../../sass/variables";
@@ -13,16 +20,25 @@ body {
 }
 
 .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 100vh;
     max-height: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .main-nav ul {
+    display: -ms-grid;
     display: grid;
     grid-gap: 20px;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     li {
@@ -33,7 +49,8 @@ body {
             text-transform: uppercase;
             display: block;
             background: $primary;
-            box-shadow: $shadow;
+            -webkit-box-shadow: $shadow;
+                    box-shadow: $shadow;
             color: $dark;
             text-align: center;
             text-decoration: none;
@@ -52,8 +69,10 @@ body {
 .corpo-full {
     ul#album-fotos {
         margin: 0 auto;
+        display: -ms-grid;
         display: grid;
         justify-items: center;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 50px 10px 50px 10px;
         list-style: none;
@@ -64,10 +83,15 @@ body {
             margin: 10px;
             border: 2px solid black;
             background-color: #ffffff;
-            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+                    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+            -webkit-transition: all 0.4s ease-in;
+            -o-transition: all 0.4s ease-in;
             transition: all 0.4s ease-in;
             &:hover {
-                transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                        transform: scale(1.5);
             }
 
             &:hover span {

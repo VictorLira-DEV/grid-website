@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import "../../sass/footer";
 @import "../../sass/menu";
 @import "../../sass/variables";
@@ -13,6 +20,7 @@ body {
 }
 
 .wrapper {
+    display: -ms-grid;
     display: grid;
     grid-gap: 20px;
 }
@@ -32,8 +40,12 @@ body {
 
 //contact container
 .contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     form textarea {
         width: 100%;
@@ -49,7 +61,8 @@ body {
         width: 700px;
         padding: 30px 40px;
         border-radius: 4px;
-        box-shadow: $shadow;
+        -webkit-box-shadow: $shadow;
+                box-shadow: $shadow;
         margin-bottom: 50px;
 
         .header {
@@ -71,8 +84,12 @@ body {
             padding-bottom: 20px;
             margin-bottom: 10px;
             position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
 
             label {
                 display: inline-block;
@@ -128,7 +145,10 @@ body {
     .contact-container {
         .form-container {
             .form-control {
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
                 margin-bottom: 0px;
 
                 .form-inside {
